@@ -10,8 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ibMessage: UILabel!
+    
+    
     var result = 10.2
     
+    @IBAction func btnTestClicked(_ sender: UIButton) {
+        
+        print("我按了啥？")
+        
+        ibMessage.text = "我要铜锣烧"
+        ibMessage.textColor = UIColor.red
+    }
     
     
     override func viewDidLoad() {
