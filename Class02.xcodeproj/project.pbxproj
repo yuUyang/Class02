@@ -14,6 +14,8 @@
 		883793AD22D0994F007266FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883793AB22D0994F007266FE /* LaunchScreen.storyboard */; };
 		883793B822D09950007266FE /* Class02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883793B722D09950007266FE /* Class02Tests.swift */; };
 		883793C322D09950007266FE /* Class02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883793C222D09950007266FE /* Class02UITests.swift */; };
+		883DA5CE22D422C700117158 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883DA5CD22D422C700117158 /* AViewController.swift */; };
+		883DA5D022D422D900117158 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883DA5CF22D422D900117158 /* BViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		883793BE22D09950007266FE /* Class02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Class02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		883793C222D09950007266FE /* Class02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class02UITests.swift; sourceTree = "<group>"; };
 		883793C422D09950007266FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883DA5CD22D422C700117158 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		883DA5CF22D422D900117158 /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				883793A922D0994F007266FE /* Assets.xcassets */,
 				883793AB22D0994F007266FE /* LaunchScreen.storyboard */,
 				883793AE22D0994F007266FE /* Info.plist */,
+				883DA5CD22D422C700117158 /* AViewController.swift */,
+				883DA5CF22D422D900117158 /* BViewController.swift */,
 			);
 			path = Class02;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				883793A522D0994F007266FE /* ViewController.swift in Sources */,
+				883DA5D022D422D900117158 /* BViewController.swift in Sources */,
+				883DA5CE22D422C700117158 /* AViewController.swift in Sources */,
 				883793A322D0994F007266FE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
