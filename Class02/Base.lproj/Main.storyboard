@@ -57,7 +57,7 @@
         <!--View Controller-->
         <scene sceneID="t2W-eE-gr4">
             <objects>
-                <viewController id="AqO-e3-wq6" sceneMemberID="viewController">
+                <viewController id="AqO-e3-wq6" customClass="BViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L1Y-zG-CfL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,6 +70,9 @@
                                     <constraint firstAttribute="width" constant="46" id="gbn-N2-zbb"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnBClicked:" destination="AqO-e3-wq6" eventType="touchUpInside" id="xIV-6K-qbd"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPB-m1-48N">
                                 <rect key="frame" x="21" y="833" width="321" height="30"/>
@@ -92,6 +95,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WKV-7Y-SCc"/>
                     </view>
+                    <connections>
+                        <outlet property="IbXLMsg" destination="PPB-m1-48N" id="fWW-Ae-izn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RKg-X6-izE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -101,12 +101,12 @@
 		883793A122D0994F007266FE /* Class02 */ = {
 			isa = PBXGroup;
 			children = (
-				883793A422D0994F007266FE /* ViewController.swift */,
 				883793A222D0994F007266FE /* AppDelegate.swift */,
 				883793A622D0994F007266FE /* Main.storyboard */,
 				883793A922D0994F007266FE /* Assets.xcassets */,
 				883793AB22D0994F007266FE /* LaunchScreen.storyboard */,
 				883793AE22D0994F007266FE /* Info.plist */,
+				883793A422D0994F007266FE /* ViewController.swift */,
 				883DA5CD22D422C700117158 /* AViewController.swift */,
 				883DA5CF22D422D900117158 /* BViewController.swift */,
 			);
