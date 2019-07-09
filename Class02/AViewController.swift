@@ -12,10 +12,20 @@ class AViewController: UIViewController {
 
     @IBOutlet weak var IbMMsg: UITextField!
     
+    
+    @IBOutlet weak var btnHiBottomConstraint: NSLayoutConstraint!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification , object:nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillHideNotification , object:nil)
+        
     }
     
     @IBAction func btnAClicked(_ sender: UIButton) {
@@ -24,8 +34,24 @@ class AViewController: UIViewController {
         
         IbMMsg.text = "我要铜锣烧"
         IbMMsg.textColor = UIColor.red
+       
+      
+        
+    }
+
+    
+    // .tencent.com
+    @objc func keyboardWillShow(notification: NSNotification) {
+        let keyboardHeight = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
+        print("猜猜看：\(keyboardHeight)")
+        btnHiBottomConstraint.constant=keyboardHeight
+        
     }
     
+    //    @objc func keyboardWillHide(notification: NSNotification) {
+    //        let keyboardHeight = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
+    //        print(keyboardHeight)
+    //    }
 
     /*
     // MARK: - Navigation
@@ -36,5 +62,6 @@ class AViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }
